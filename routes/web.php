@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ConverterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,3 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [ConverterController::class, 'index']);
+Route::post('/', [ConverterController::class, 'converter'])->name('converter');
+Route::view('/about', 'about')->name('about');

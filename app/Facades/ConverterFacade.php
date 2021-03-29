@@ -13,6 +13,6 @@ class ConverterFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Calculator';
+        return 'Converter';
     }
 }

@@ -10,7 +10,7 @@ class ConverterController extends Controller
     /**
      * Точка входа в приложение
      *
-     * @return Viev представление
+     * @return View представление
      */
     public function index()
     {

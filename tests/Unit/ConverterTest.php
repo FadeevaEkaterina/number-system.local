@@ -2,17 +2,18 @@
 
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
+use Converter;
+use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
+/**
+ * Class for converter test.
+ */
 class ConverterTest extends TestCase
 {
-    /**
-     * A basic unit test example.
-     *
-     * @return void
-     */
-    public function test_example()
+    public function testConvert9to10()
     {
-        $this->assertTrue(true);
+        $this->assertEquals(922, Converter::convert9to10('1234'));
     }
 }

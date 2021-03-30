@@ -14,7 +14,7 @@ class ValidationServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Validator::extend('nine_digit_number_system', function ($attribute, $value, $parameters, $validation) {
+        Validator::extend('nine_digit_number_system', function ($attribute, $value, $parameters, $validatior) {
             if (preg_match('/^[0-8]+$/', $value)) {
                 return true;
             } else {

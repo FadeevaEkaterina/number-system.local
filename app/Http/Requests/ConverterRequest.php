@@ -32,11 +32,11 @@ class ConverterRequest extends FormRequest
      *
      * @return array
      */
-    public function message()
+    public function messages()
     {
         return [
-            'number.required' => 'необходимо ввести девятиричное число' ,
-            'number.nine_digit_number_system' => 'девятиричное число должно содержать только цифры 0, 1, 2, 3, 4, 5, 6, 7, 8',
+            'number.required' => 'Необходимо ввести девятиричное число',
+            'number.nine_digit_number_system' => 'Девятиричное число должно содержать только цифры 0, 1, 2, 3, 4, 5, 6, 7, 8',
         ];
     }
 }
